@@ -1,4 +1,4 @@
-const VoiceIt = require('voiceit2-nodejs');
+const VoiceIt = require('@voiceittech/voiceit3-nodejs');
 
 function handleSuccessfulEnrollment(twiml, enrollmentCount) {
   // VoiceIt requires at least 3 successful enrollments.

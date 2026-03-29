@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const Airtable = require('airtable');
-const Voiceit2 = require('voiceit2-nodejs');
+const VoiceIt3 = require('@voiceittech/voiceit3-nodejs');
 
 // exports.handler = async function (context, event, callback) {
 //   let myVoiceIt = new voiceit2(
