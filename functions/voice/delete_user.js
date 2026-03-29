@@ -4,7 +4,6 @@ const Airtable = require('airtable');
 const VoiceIt3 = require('@voiceittech/voiceit3-nodejs');
 
 // exports.handler = async function (context, event, callback) {
-//   let myVoiceIt = new voiceit2(
 //     context.VOICEIT_API_KEY,
 //     context.VOICEIT_API_TOKEN
 //   );
