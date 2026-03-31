@@ -11,7 +11,7 @@
     "@twilio/runtime-handler": "1.2.3",
     "airtable": "0.11.4",
     "twilio": "^3.56",
-    "@voiceittech/voiceit3-nodejs": "2.5.4"
+    "@voiceittech/voiceit3-nodejs": "2.5.5"
   },
   "devDependencies": {
     "eslint": "^8.21.0",
