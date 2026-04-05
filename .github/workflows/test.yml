@@ -8,7 +8,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@voiceittech'
       - run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check syntax
         run: |
           for f in functions/voice/*.js; do
