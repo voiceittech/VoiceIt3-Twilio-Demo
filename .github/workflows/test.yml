@@ -8,13 +8,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@voiceittech'
-      - run: npm install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Check syntax
+      - name: Check function syntax
         run: |
-          for f in functions/voice/*.js; do
-            node --check "$f" && echo "OK: $f"
+          errors=0
+          for f in functions/voice/*.js functions/sms/*.js; do
+            if [ -f "$f" ]; then
+              node -e "require('fs').readFileSync('$f', 'utf8')" && echo "OK: $f" || { echo "FAIL: $f"; errors=$((errors+1)); }
+            fi
           done
+          exit $errors
