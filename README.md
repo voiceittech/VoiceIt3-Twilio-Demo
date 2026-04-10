@@ -100,6 +100,10 @@ Flow:
 Note the phrase and content language can be any of the 119 supported languages and can be any custom phrase you add to your account
 ## Support
 
-If you find this SDK useful, please consider giving it a star on GitHub — it helps others discover the project!
+If you find this demo useful, please consider giving it a star on GitHub — it helps others discover the project!
 
 [![GitHub stars](https://img.shields.io/github/stars/voiceittech/voiceit3-twilio-demo?style=social)](https://github.com/voiceittech/voiceit3-twilio-demo/stargazers)
+
+## License
+
+voiceit3-twilio-demo is available under the MIT license. See the LICENSE file for more info.
