@@ -1,5 +1,5 @@
 /* eslint-disable func-names */
-const VoiceIt3 = require('@voiceittech/voiceit3-nodejs');
+const voiceit3 = require('@voiceittech/voiceit3-nodejs');
 const Airtable = require('airtable');
 
 let numTries = 0;
@@ -34,7 +34,7 @@ const callerGroupId = async (phone, context) => {
 exports.handler = async function (context, event, callback) {
   // eslint-disable-next-line no-undef
   const twiml = new Twilio.twiml.VoiceResponse();
-  const myVoiceIt = new VoiceIt3(context.VOICEIT_API_KEY, context.VOICEIT_API_TOKEN);
+  const myVoiceIt = new voiceit3(context.VOICEIT_API_KEY, context.VOICEIT_API_TOKEN);
   const groupId = await callerGroupId(removeSpecialChars(event.From), context);
   const audioFileURL = `${event.RecordingUrl}.wav`;
 

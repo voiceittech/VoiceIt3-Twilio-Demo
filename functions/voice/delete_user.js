@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const Airtable = require('airtable');
-const VoiceIt3 = require('@voiceittech/voiceit3-nodejs');
+const voiceit3 = require('@voiceittech/voiceit3-nodejs');
 
 // exports.handler = async function (context, event, callback) {
 //     context.VOICEIT_API_KEY,

@@ -1,6 +1,6 @@
 /* eslint-disable func-names */
 /* eslint-disable consistent-return */
-const VoiceIt3 = require('@voiceittech/voiceit3-nodejs');
+const voiceit3 = require('@voiceittech/voiceit3-nodejs');
 const AirTable = require('airtable');
 
 function removeSpecialChars(text) {
@@ -28,7 +28,7 @@ const callerUserId = async (phone, context) => {
 };
 
 exports.handler = async function (context, event, callback) {
-  const myVoiceIt = new VoiceIt3(
+  const myVoiceIt = new voiceit3(
     context.VOICEIT_API_KEY,
     context.VOICEIT_API_TOKEN,
   );
